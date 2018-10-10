@@ -1,0 +1,21 @@
+// 不换行
+.no-wrap() {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.border(@t:1px,@r:1px,@b:1px,@l:1px,@c:#eee) {
+  border: 1px solid @c;
+  border-width: @t @r @b @l;
+}
+
+// 背景图片
+.img(@u,@w:.2rem,@h:.02rem,@d:block) {
+  width: @w;
+  height: @h;
+  display: @d;
+  background-image: ~"url(img/@{u})";
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
